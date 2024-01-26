@@ -16,6 +16,21 @@ footer {
   .footer-left-bar li,
   .footer-right-bar li {
     list-style: none;
+
+    &>a {
+      padding: 10px;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover,
+      &:focus {
+        transform: translateY(-3px);
+      }
+
+      &>svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   .footer-left-bar {
@@ -23,6 +38,7 @@ footer {
     bottom: -16px;
     left: 51px;
     padding: 0;
+    width: 40px;
 
     i {
       font-size: 19px;
