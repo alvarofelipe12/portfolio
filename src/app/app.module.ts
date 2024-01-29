@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -26,7 +27,8 @@ import { IntroComponent } from './components/intro/intro.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
