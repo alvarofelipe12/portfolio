@@ -1,1 +1,28 @@
-<!-- <p>intro works!</p> -->
+<section class="section banner">
+  <div [@bannerTrigger] class="container">
+    <div class="section-box-banner">
+      <div class="content">
+        <div>
+          <h1>Hello! My name is</h1>
+        </div>
+        <div class='banner-title'>
+          <h2>Alvaro Felipe Garcia</h2>
+          <h3>Software Developer</h3>
+        </div>
+        <div class='banner-description'>
+          <p class="mt-4">
+              a passionate <span class='underline'>Angular</span> Developer based in Toronto, ON. My journey in software
+              engineering has been marked by a commitment to <span class='underline'>excellence</span>, <span class='underline'>creativity</span>, and <span class='underline'>continual learning</span>.
+          </p>
+        </div>
+      </div>
+      <div class="div-btn-banner" ngbNav #nav="ngbNav">
+        <div ngbNavItem>
+          <a ngbNavLink (click)='scroll("contact")' class="main-btn">
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,6 +1,6 @@
-<nav [@animateMenu] class="navbar main-navbar" [class.nav-shadow]='pageYPosition && pageYPosition > 0'>
+<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='pageYPosition && pageYPosition > 0'>
   <div class="container">
-    <a class="navbar-brand text-light" [routerLink]="'inicio'">
+    <a class="navbar-brand text-light" [routerLink]="'/'">
       <img ngSrc='assets/images/logo.png' width='45' height="45"/>
     </a>
     <ul ngbNav #nav="ngbNav" class="menu-ul">
