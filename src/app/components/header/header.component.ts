@@ -43,7 +43,7 @@ export class HeaderComponent {
 
   downloadCV() {
     // this.languageService.translateService.get("Header.cvName").subscribe(val => {
-    const val = "cvName";
+    const val = "AngularFelipeGarciaResume.pdf";
     this.cvName = val
     console.log(val)
     // app url
