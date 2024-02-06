@@ -43,14 +43,14 @@ export class HeaderComponent {
 
   downloadCV() {
     // this.languageService.translateService.get("Header.cvName").subscribe(val => {
-    const val = "AngularFelipeGarciaResume.pdf";
+    const val = "AlvaroGarciaResume.pdf";
     this.cvName = val
     console.log(val)
     // app url
     let url = window.location.href;
 
     // Open a new window with the CV
-    window.open(url + "/../assets/cv/" + this.cvName, "_blank");
+    window.open(url + "/../assets/resume/" + this.cvName, "_blank");
     // })
 
   }
