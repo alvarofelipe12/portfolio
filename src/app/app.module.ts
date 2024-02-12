@@ -1,6 +1,7 @@
 import { NgOptimizedImage } from '@angular/common'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { IntroComponent } from './components/intro/intro.component';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    IntroComponent
+    IntroComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
