@@ -13,17 +13,20 @@ footer {
     background-color: $LightSlate;
   }
 
-  .footer-left-bar li,
-  .footer-right-bar li {
+  .footer-left-bar li {
     list-style: none;
 
-    &>a {
+    &>a,
+    &>div {
       padding: 10px;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      display: inline-block;
+      color: inherit;
 
       &:hover,
       &:focus {
         transform: translateY(-3px);
+        color: $Green;
       }
 
       &>svg {
@@ -46,10 +49,8 @@ footer {
     }
 
     li {
-      margin: 20px 0px;
-
       &:last-of-type {
-        margin-bottom: 33px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -77,6 +78,13 @@ footer {
       margin: 20px auto;
       padding: 10px;
       color: $LightSlate;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover,
+      &:focus {
+        transform: translateY(-3px);
+        color: $Green;
+      }
     }
   }
 
