@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --c production --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress",
+    "build": "ng build --c production --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress --output-hashing=all",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
