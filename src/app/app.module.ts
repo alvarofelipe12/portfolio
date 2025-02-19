@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     NgbModule,
     NgOptimizedImage,
     CarouselModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

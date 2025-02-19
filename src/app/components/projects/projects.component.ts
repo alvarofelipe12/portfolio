@@ -1,5 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -61,7 +64,7 @@ export class ProjectsComponent {
       ),
     },
     {
-      title: 'Alvaro\'s Car Rentals',
+      title: "Alvaro's Car Rentals",
       description:
         'App to reserve a spot in a parking lot generating a receipt for the time required.',
       imgs: [],
@@ -126,9 +129,8 @@ export class ProjectsComponent {
       description:
         'Angular Application consuming the Spotify API (from 2019), able to connect to your Spotify account, show information from your account like Name, Profile URL, Followers, ID, Type of account, URI, and Playlists. Additionally, let the use to explore their playlists and Track info. Finally in the video, in Spanish, you can see all the code necessary to run this application explained.',
       imgs: [],
-      ghLink:
-        'https://github.com/alvarofelipe12/todo-app/tree/feature-categories',
-      demoLink: null,
+      ghLink: 'https://github.com/alvarofelipe12/OpenMySpotifyApp',
+      demoLink: 'https://github.com/alvarofelipe12/OpenMySpotifyApp',
       technologies: ['Angular', 'HTML', 'SCSS', 'Angular Material'],
       youtubeURL: this._sanitizer.bypassSecurityTrustResourceUrl(
         'https://www.youtube.com/embed/7InVeMX6k2Y'
@@ -139,7 +141,9 @@ export class ProjectsComponent {
   @ViewChild('imgContainer')
   imgContainer!: ElementRef;
 
-  constructor(private _sanitizer: DomSanitizer) {}
+  constructor(private _sanitizer: DomSanitizer, library: FaIconLibrary) {
+    library.addIcons(faGithub, faArrowUpRightFromSquare);
+  }
 
   debug() {
     this.imgContainer.nativeElement.scroll({

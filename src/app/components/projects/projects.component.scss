@@ -1,8 +1,21 @@
 @import "./../../../variables.scss";
 
-.project-name {
-  color: $Green;
+.container {
+  .section-box {
+    .project-container {
+      .project-name {
+        color: $Green;
+      }
+
+      .project-links {
+        a {
+          margin: 5px;
+        }
+      }
+    }
+  }
 }
+
 
 .loadership_SGDOK {
   display: flex;
