@@ -10,7 +10,7 @@
 
   ul {
     display: block;
-    width: 114.33px;
+    width: 20%;
     border: none;
   }
 
@@ -36,14 +36,9 @@
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    width: 114.33px;
+    width: 100%;
     background-color: transparent;
     height: 42px;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -72,7 +67,7 @@
 
 .jobs {
 
-  max-width: 700px;
+  max-width: 90%;
   margin: auto;
 
   .title-tab-content {
