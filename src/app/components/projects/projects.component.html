@@ -1,53 +1,124 @@
-<section class="section proyects" id='proyects'>
+<section
+  class="section projects"
+  id='projects'
+>
   <div class="container">
     <div class="section-box">
-      <div data-aos="fade-up" data-aos-duration="1000">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h3 class="section-title">
           <span class='n-section-title'>03.</span> Some Things I've Built
         </h3>
       </div>
 
-      <div *ngFor='let project of projects; let i = index' class="d-flex m-3 gap-3 proyect-container" data-aos="fade-up"
-        data-aos-duration="1000">
-        <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
-          <div class="img-feature-proyect-box">
-            <div class="img-container" style='width: auto;'>
-              <iframe [src]='project.youtubeURL' width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <div
+        *ngFor='let project of projects; let i = index'
+        class="d-flex m-3 gap-3 project-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="img-feature-project-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          *ngIf="i%2==0"
+        >
+          <div class="img-feature-project-box">
+            <div
+              class="img-container"
+              style='width: auto;'
+            >
+              <iframe
+                [src]='project.youtubeURL'
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
-        <div [class.proyect-info-right]='i%2==0' [class.proyect-info-left]='i%2!=0' class="h-100"
-          style="background-image: url('{{project.imgs[0]}}');">
-          <div class="proyect-box">
-            <h5 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-name">{{project.title}}</h5>
+        <div
+          [class.project-info-right]='i%2==0'
+          [class.project-info-left]='i%2!=0'
+          class="h-100"
+          style="background-image: url('{{project.imgs[0]}}');"
+        >
+          <div class="project-box">
+            <h5
+              [class.text-right]='i%2==0'
+              [class.text-left]='i%2!=0'
+              class="project-name"
+            >{{project.title}}</h5>
 
-            <div class="proyect-description-box" (click)='debug()'>
-              <p class="mb-0" [innerHTML]="project.description">
+            <div
+              class="project-description-box"
+              (click)='debug()'
+            >
+              <p
+                class="mb-0"
+                [innerHTML]="project.description"
+              >
               </p>
             </div>
-            <ul [class.justify-content-end]='i%2==0' [class.justify-content-start]='i%2!=0' class="proyect-skills">
-              <li *ngFor='let technology of project.technologies' class="ml-3">
+            <ul
+              [class.justify-content-end]='i%2==0'
+              [class.justify-content-start]='i%2!=0'
+              class="project-skills"
+            >
+              <li
+                *ngFor='let technology of project.technologies'
+                class="ml-3"
+              >
                 <span class="underline technology">{{technology}}</span>
               </li>
             </ul>
-            <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-links">
-              <a *ngIf="project.ghLink" style='color: inherit' [href]="project.ghLink" target="_blank"><i
-                  class="ml-3 fab fa-github"></i></a>
-              <a *ngIf="project.demoLink" style='color: inherit' [href]="project.demoLink" target="_blank"><i
-                  class="ml-3 fas fa-external-link-alt"></i></a>
+            <div
+              [class.text-right]='i%2==0'
+              [class.text-left]='i%2!=0'
+              class="project-links"
+            >
+              <a
+                *ngIf="project.ghLink"
+                style='color: inherit'
+                [href]="project.ghLink"
+                target="_blank"
+              ><i class="ml-3 fab fa-github"></i></a>
+              <a
+                *ngIf="project.demoLink"
+                style='color: inherit'
+                [href]="project.demoLink"
+                target="_blank"
+              ><i class="ml-3 fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
-        <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
-          <div class="img-feature-proyect-box">
-            <div class="img-container" style='width: auto;'>
-              <iframe [src]='project.youtubeURL' width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        <div
+          class="img-feature-project-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          *ngIf="i%2!=0"
+        >
+          <div class="img-feature-project-box">
+            <div
+              class="img-container"
+              style='width: auto;'
+            >
+              <iframe
+                [src]='project.youtubeURL'
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center">
-        In construction...
+        Under construction...
         <div class="loadership_SGDOK">
           <!-- https://www.loadership.com/loaders/dot_circular_pulse -->
           <div></div>
