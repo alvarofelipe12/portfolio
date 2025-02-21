@@ -47,7 +47,7 @@ export class ProjectsComponent {
     {
       title: 'Cat_alogue',
       description:
-        'Hybrid Ionic/Angular Application (iOS and Android) to display cat breeds and their details using The Cat API. Posseses features like List of cat breeds with pagination, Search functionality to quickly find specific breeds, Detailed view for each breed, including an image and relevant information, and a fully responsive UI for mobile devices',
+        'Hybrid Ionic/Angular Application (iOS and Android) to display cat breeds and their details using The Cat API. Posseses features like List of cat breeds with pagination, Search functionality to quickly find specific breeds, Detailed view for each breed, including an image and relevant information, and a fully responsive UI for mobile devices.',
       imgs: [],
       ghLink: 'https://github.com/alvarofelipe12/cat-alogue',
       demoLink: null,
@@ -64,7 +64,19 @@ export class ProjectsComponent {
       ),
     },
     {
-      title: "Alvaro's Car Rentals",
+      title: 'Final Android Advanced Course Project - Click n Buy',
+      description:
+        'E-commerce application with features like, Item List View, Search/Filter Functionality, Detailed Product View, Real-time Total Calculation, User Login, User Registration, Add to Cart Functionality, and Shopping Cart View. Credits to my teammate Thomas too!',
+      imgs: [],
+      ghLink: null,
+      demoLink: null,
+      technologies: ['Android Studio', 'Kotlin'],
+      youtubeURL: this._sanitizer.bypassSecurityTrustResourceUrl(
+        'https://www.youtube.com/embed/mIneqYi8XRI'
+      ),
+    },
+    {
+      title: "Android Advanced Course Project - Alvaro's Car Rentals",
       description:
         'App to reserve a spot in a parking lot generating a receipt for the time required.',
       imgs: [],
@@ -74,6 +86,25 @@ export class ProjectsComponent {
       youtubeURL: this._sanitizer.bypassSecurityTrustResourceUrl(
         'https://www.youtube.com/embed/kBfStQqTh20'
       ),
+    },
+    {
+      title: 'Final Full Stack Course Project - Fitness Web Application',
+      description:
+        'Frontend for Fitness Application including views like Home Page, Class Listings, Shopping Cart, Checkout, and Admin Dashboard. On top of it, the available features are, User authentication (login, registration, sessions), Admin functionality to access additional features, Class browsing and selection, Shopping cart for adding fitness classes, Membership checkout and payment simulation, and data persistance with MongoDB. Credit is also for my teammate in this project, Juan Lopez!',
+      imgs: [
+        'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6vccMfxuyx2UBvCA6XErk7oimS9G%26teamId%3Dalvarofelipe12s-projects%26withStatus%3D1&w=1920&q=75',
+      ],
+      ghLink: 'https://github.com/alvarofelipe12/project_fs',
+      demoLink: 'https://project-full-stack-eight.vercel.app/',
+      technologies: [
+        'JavaScript',
+        'CSS',
+        'HTML',
+        'Express.js',
+        'Handlebars.js',
+        'MongoDB',
+      ],
+      youtubeURL: null,
     },
     {
       title: 'Full Stack Course Project - Music Festival',
@@ -90,7 +121,7 @@ export class ProjectsComponent {
     {
       title: 'Full Stack Course Project - Book Store',
       description:
-        'Server side rendered application of a book store that filters results from a defined object as DB. On top of that, the application let the user filter by Author, Title or just Show all books',
+        'Server side rendered application of a book store that filters results from a defined object as DB. On top of that, the application let the user filter by Author, Title or just Show all books.',
       imgs: [],
       ghLink: null,
       demoLink: null,
@@ -108,7 +139,7 @@ export class ProjectsComponent {
     {
       title: 'Full Stack Course Project - Zelda Items',
       description:
-        'In this application, we have a two screen web application that enables users to search for items in an items database and add or remove items from the Favorites page',
+        'In this application, we have a two screen web application that enables users to search for items in an items database and add or remove items from the Favorites page.',
       imgs: [],
       ghLink: null,
       demoLink: null,

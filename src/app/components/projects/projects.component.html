@@ -30,13 +30,25 @@
               class="img-container"
               style='width: auto;'
             >
-              <iframe
-                [src]='project.youtubeURL'
-                width="560"
-                height="315"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
+              <ng-container *ngIf="project.youtubeURL; else elseTemplate">
+                <iframe
+                  [src]='project.youtubeURL'
+                  width="560"
+                  height="315"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </ng-container>
+              <ng-template #elseTemplate>
+                <img
+                  [src]="project.imgs[0]"
+                  alt="Preview of the project"
+                  aria-label="Preview of the project"
+                  aria-placeholder="Preview of the project"
+                  width="560"
+                  height="315"
+                >
+              </ng-template>
             </div>
           </div>
         </div>
@@ -44,7 +56,6 @@
           [class.project-info-right]='i%2==0'
           [class.project-info-left]='i%2!=0'
           class="h-100"
-          style="background-image: url('{{project.imgs[0]}}');"
         >
           <div class="project-box">
             <h5
