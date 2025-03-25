@@ -3,6 +3,13 @@
 .container {
   .section-box {
     .project-container {
+      .img-container {
+        .video-frame {
+          width: 35rem;
+          height: 20rem;
+        }
+      }
+
       .project-name {
         color: $Green;
       }
@@ -10,6 +17,23 @@
       .project-links {
         a {
           margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    .section-box {
+      .project-container {
+        flex-wrap: wrap;
+
+        .img-container {
+          .video-frame {
+            width: initial;
+            height: initial;
+          }
         }
       }
     }

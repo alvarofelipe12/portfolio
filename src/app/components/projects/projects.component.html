@@ -28,14 +28,13 @@
           <div class="img-feature-project-box">
             <div
               class="img-container"
-              style='width: auto;'
+              [class.embed-embed-responsive]="project.youtubeURL"
+              [class.embed-responsive-16by9]="project.youtubeURL"
             >
               <ng-container *ngIf="project.youtubeURL; else elseTemplate">
                 <iframe
+                  class="video-frame embed-responsive-item"
                   [src]='project.youtubeURL'
-                  width="560"
-                  height="315"
-                  frameborder="0"
                   allowfullscreen
                 ></iframe>
               </ng-container>
@@ -119,13 +118,12 @@
           <div class="img-feature-project-box">
             <div
               class="img-container"
-              style='width: auto;'
+              [class.embed-responsive]="project.youtubeURL"
+              [class.embed-responsive-16by9]="project.youtubeURL"
             >
               <iframe
+                class="video-frame embed-responsive-item"
                 [src]='project.youtubeURL'
-                width="560"
-                height="315"
-                frameborder="0"
                 allowfullscreen
               ></iframe>
             </div>

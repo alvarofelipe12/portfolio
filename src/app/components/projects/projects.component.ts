@@ -68,7 +68,7 @@ export class ProjectsComponent {
       description:
         'E-commerce application with features like, Item List View, Search/Filter Functionality, Detailed Product View, Real-time Total Calculation, User Login, User Registration, Add to Cart Functionality, and Shopping Cart View. Credits to my teammate Thomas too!',
       imgs: [],
-      ghLink: null,
+      ghLink: 'https://github.com/homing1923/Kotlin_self-learning-app',
       demoLink: null,
       technologies: ['Android Studio', 'Kotlin'],
       youtubeURL: this._sanitizer.bypassSecurityTrustResourceUrl(
