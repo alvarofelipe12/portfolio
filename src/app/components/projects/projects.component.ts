@@ -92,7 +92,7 @@ export class ProjectsComponent {
       description:
         'Frontend for Fitness Application including views like Home Page, Class Listings, Shopping Cart, Checkout, and Admin Dashboard. On top of it, the available features are, User authentication (login, registration, sessions), Admin functionality to access additional features, Class browsing and selection, Shopping cart for adding fitness classes, Membership checkout and payment simulation, and data persistance with MongoDB. Credit is also for my teammate in this project, Juan Lopez!',
       imgs: [
-        'https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D0%26deploymentId%3Ddpl_6vccMfxuyx2UBvCA6XErk7oimS9G%26teamId%3Dalvarofelipe12s-projects%26withStatus%3D1&w=1920&q=75',
+        'assets/images/Fitness-screenshot.png',
       ],
       ghLink: 'https://github.com/alvarofelipe12/project_fs',
       demoLink: 'https://project-full-stack-eight.vercel.app/',

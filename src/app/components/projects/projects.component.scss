@@ -4,7 +4,7 @@
   .section-box {
     .project-container {
       .img-container {
-        .video-frame {
+        .video-frame, img {
           width: 35rem;
           height: 20rem;
         }
@@ -29,10 +29,19 @@
       .project-container {
         flex-wrap: wrap;
 
+        &:has(.project-info-left) {
+          flex-flow: wrap-reverse;
+        }
+
         .img-container {
           .video-frame {
             width: initial;
             height: initial;
+          }
+
+          img {
+            width: 100%;
+            height: 11rem;
           }
         }
       }
