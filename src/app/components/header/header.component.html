@@ -1,41 +1,85 @@
-<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]='pageYPosition && pageYPosition > 0'>
+<nav
+  [@animateMenu]
+  class="navbar main-navbar on-top"
+  [class.nav-shadow]='pageYPosition && pageYPosition > 0'
+>
   <div class="container">
-    <a class="navbar-brand text-light" [routerLink]="['./']">
-      <img ngSrc='assets/images/logo.png' width='45' height="45"/>
+    <a
+      class="navbar-brand text-light"
+      [routerLink]="['./']"
+    >
+      <img
+        ngSrc='assets/images/logo.png'
+        width='45'
+        height="45"
+        priority
+        alt="Logo"
+        aria-label="Preview of Logo"
+        aria-placeholder="Preview of Logo"
+      />
     </a>
-    <ul ngbNav #nav="ngbNav" class="menu-ul">
+    <ul
+      ngbNav
+      #nav="ngbNav"
+      class="menu-ul"
+    >
       <li ngbNavItem>
-        <a ngbNavLink (click)='scroll("about")'><span class='nav-number'>01. </span> <span class="underline nav-text">
+        <a
+          ngbNavLink
+          (click)='scroll("about")'
+        ><span class='nav-number'>01. </span> <span class="underline nav-text">
             About</span></a>
         <ng-template ngbNavContent>First content</ng-template>
       </li>
       <li ngbNavItem>
-        <a ngbNavLink (click)='scroll("jobs")'><span class='nav-number'>02. </span> <span class="underline nav-text">
+        <a
+          ngbNavLink
+          (click)='scroll("jobs")'
+        ><span class='nav-number'>02. </span> <span class="underline nav-text">
             Experience</span></a>
         <ng-template ngbNavContent>Second content</ng-template>
       </li>
       <li ngbNavItem>
-        <a ngbNavLink (click)='scroll("projects")'><span class='nav-number'>03. </span> <span
-            class="underline nav-text"> Projects</span></a>
+        <a
+          ngbNavLink
+          (click)='scroll("projects")'
+        ><span class='nav-number'>03. </span> <span class="underline nav-text"> Projects</span></a>
         <ng-template ngbNavContent>Second content</ng-template>
       </li>
       <li ngbNavItem>
-        <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>04. </span> <span class="underline nav-text">
+        <a
+          ngbNavLink
+          (click)='scroll("contact")'
+        ><span class='nav-number'>04. </span> <span class="underline nav-text">
             Contact</span></a>
         <ng-template ngbNavContent>Second content</ng-template>
       </li>
       <li ngbNavItem>
-        <a (click)="downloadCV()" class="main-btn cv-btn" ngbNavLink>
+        <a
+          (click)="downloadCV()"
+          class="main-btn cv-btn"
+          ngbNavLink
+        >
           Resume
         </a>
       </li>
     </ul>
     <div class="menu-wrapper">
-      <div [class.animate]='responsiveMenuVisible' (click)='responsiveMenuVisible = !responsiveMenuVisible'
-        class="hamburger-menu"></div>
+      <div
+        [class.animate]='responsiveMenuVisible'
+        (click)='responsiveMenuVisible = !responsiveMenuVisible'
+        class="hamburger-menu"
+      ></div>
     </div>
-    <div class="menu-responsive" [ngStyle]="{'display': !responsiveMenuVisible ? 'none' : '' }">
-      <aside [class.aside-show]='responsiveMenuVisible' [class.nav-shadow]='pageYPosition && pageYPosition > 0' class="on-top">
+    <div
+      class="menu-responsive"
+      [ngStyle]="{'display': !responsiveMenuVisible ? 'none' : '' }"
+    >
+      <aside
+        [class.aside-show]='responsiveMenuVisible'
+        [class.nav-shadow]='pageYPosition && pageYPosition > 0'
+        class="on-top"
+      >
         <nav>
           <ol>
             <li>
@@ -60,7 +104,10 @@
               </a>
             </li>
             <li>
-              <a (click)="downloadCV()" class="main-btn cv-btn">
+              <a
+                (click)="downloadCV()"
+                class="main-btn cv-btn"
+              >
                 Resume
               </a>
             </li>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://alvarofelipe12.github.io/portfolio/sitemap.xml

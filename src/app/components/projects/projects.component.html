@@ -41,9 +41,9 @@
               <ng-template #elseTemplate>
                 <img
                   [src]="project.imgs[0]"
-                  alt="Preview of the project"
-                  aria-label="Preview of the project"
-                  aria-placeholder="Preview of the project"
+                  alt="Preview of the project {{project.title}}"
+                  ariaLabel="Preview of the project {{project.title}}"
+                  ariaPlaceholder="Preview of the project {{project.title}}"
                 >
               </ng-template>
             </div>
