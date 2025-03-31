@@ -1,4 +1,4 @@
-import { NgOptimizedImage } from '@angular/common'
+import { NgOptimizedImage } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -36,7 +36,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CarouselModule,
     FontAwesomeModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{ provide: 'googleTagManagerId', useValue: 'GTM-MTZJ7LXZ' }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
